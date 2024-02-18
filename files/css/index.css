@@ -181,3 +181,11 @@ main hr {
     position: relative;
     z-index: 1;
 }
+
+a.grid-item {
+    text-decoration: none;
+    color: inherit;
+}
+a.grid-item:hover {
+    text-decoration: none; 
+}
