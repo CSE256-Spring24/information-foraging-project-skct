@@ -11,49 +11,109 @@
   <title>
     Teddy Bears | Nursery School | Washington University in St. Louis
   </title>
+
+  <style>
+    main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+
+      .newsletter-month, .newsletter-general {
+        margin-bottom: 40px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        background: #fff;
+        margin-bottom: 10px; 
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      ul li:last-child {
+        margin-bottom: 30px; 
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+
+      ul li a:hover {
+        background-color: #f8f8f8;
+      }
+
+      .download {
+        color: #a51417; 
+        font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        main {
+          padding: 15px;
+        }
+      }
+  </style>
 </head>
 
 <body>
   <ts-load data-name="header"></ts-load>
   <div id="page-content">
-    <main>
+    <main id="page-content">
       <h1>Teddy Bear Newsletters</h1>
-      <p>
-        By
-        <a href="files/nursery_school.html">Nursery School</a>
-        • December 18
-      </p>
-      <h3>
-        <a class="download" href="downloads/TB-Newsletter-December-2.pdf" target="_blank">Teddy Bear December Newletter</a><br>
-        <a class="download" href="downloads/TB-Happy-Thanksgiving-Teddy-Bears-2019-compressed.pdf" target="_blank">Teddy
-          Bear Thanksgiving Newsletter</a><br>
-        <a class="download" href="downloads/November-TB-Newsletter-1-compressed.pdf" target="_blank">Teddy Bear
-          Newsletter November 19</a><br>
-        <a class="download" href="downloads/Happy-Halloween-Teddy-Bears_-compressed.pdf" target="_blank">Teddy Bear
-          Halloween Newsletter</a>
-        <br>
-        <a class="download" href="downloads/TB-Newsletter-5-compressed.pdf" target="_blank">Teddy Bear Newsletter
-          October 25</a>
-        <br>
-        <a class="download" href="downloads/Teddy-Bear-4th-Newsletter-compressed.pdf" target="_blank">Teddy Bear
-          Newsletter October 13</a>
-        <br>
-        <a class="download" href="downloads/Teddy-Bear-3rd-Newsletter-compressed.pdf" target="_blank">Teddy Bear
-          Newsletter September 29</a>
-        <br>
-        <a class="download" href="downloads/Teddy-Bear-2nd-Newsletter-1-compressed.pdf" target="_blank">Teddy Bear
-          Newsletter September 15</a>
-        <br>
-        <a class="download" href="downloads/Teddy-Bear-1st-Newsletter-4-compressed.pdf" target="_blank">Teddy Bear
-          First Newsletter</a>
-        <br>
-        <a class="download" href="downloads/Teddy-Bear-Basics-WUNS-19_20-.pdf" target="_blank">Teddy Bear
-          Basics</a><br>
-        <a class="download" href="downloads/TB-Goals-.pdf" target="_blank">Teddy Bear Goals</a>
-        <br>
-        <a class="download" href="downloads/REVISED-TEDDY-BEAR-SCHEDULE.pdf" target="_blank">Revised Teddy Bear
-          Schedule</a>
-      </h3>
+      <section class="newsletter-general">
+        <h2>General Information</h2>
+        <ul>
+          <li><a class="download" href="downloads/Teddy-Bear-Basics-WUNS-19_20-.pdf" target="_blank">Teddy Bear Basics</a></li>
+          <li><a class="download" href="downloads/TB-Goals-.pdf" target="_blank">Teddy Bear Goals</a></li>
+          <li><a class="download" href="downloads/REVISED-TEDDY-BEAR-SCHEDULE.pdf" target="_blank">Revised Teddy Bear Schedule</a></li>
+        </ul>
+      </section>
+      <section class="newsletter-month">
+        <h2>December</h2>
+        <ul>
+          <li><a class="download" href="downloads/TB-Newsletter-December-2.pdf" target="_blank">Teddy Bear December Newsletter</a></li>
+        </ul>
+      </section>
+      <section class="newsletter-month">
+        <h2>November</h2>
+        <ul>
+          <li><a class="download" href="downloads/November-TB-Newsletter-1-compressed.pdf" target="_blank">Teddy Bear Newsletter November 19</a></li>
+          <li><a class="download" href="downloads/TB-Happy-Thanksgiving-Teddy-Bears-2019-compressed.pdf" target="_blank">Teddy Bear Thanksgiving Newsletter</a></li>
+        </ul>
+      </section>
+      <section class="newsletter-month">
+        <h2>October</h2>
+        <ul>
+          <li><a class="download" href="downloads/Happy-Halloween-Teddy-Bears_-compressed.pdf" target="_blank">Teddy Bear Halloween Newsletter</a></li>
+          <li><a class="download" href="downloads/TB-Newsletter-5-compressed.pdf" target="_blank">Teddy Bear Newsletter October 25</a></li>
+          <li><a class="download" href="downloads/Teddy-Bear-4th-Newsletter-compressed.pdf" target="_blank">Teddy Bear Newsletter October 13</a></li>
+        </ul>
+      </section>
+      <section class="newsletter-month">
+        <h2>September</h2>
+        <ul>
+          <li><a class="download" href="downloads/Teddy-Bear-3rd-Newsletter-compressed.pdf" target="_blank">Teddy Bear Newsletter September 29</a></li>
+          <li><a class="download" href="downloads/Teddy-Bear-2nd-Newsletter-1-compressed.pdf" target="_blank">Teddy Bear Newsletter September 15</a></li>
+          <li><a class="download" href="downloads/Teddy-Bear-1st-Newsletter-4-compressed.pdf" target="_blank">Teddy Bear First Newsletter</a></li>
+        </ul>
+      </section>
     </main>
   </div>
   <ts-load data-name="footer"></ts-load>
