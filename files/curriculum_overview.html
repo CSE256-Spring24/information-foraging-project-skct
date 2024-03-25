@@ -11,178 +11,108 @@
   <title>
     Curriculum Overview | Nursery School | Washington University in St. Louis
   </title>
-</head>
+  <style>
+.curriculum-overview h1 {
+  color: #000000;
+  margin-bottom: 0.5em;
+}
 
+.subheading {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+.parent-info p, .development-section p, .curriculum-pdf p {
+  line-height: 1.6;
+}
+
+.development-section {
+  margin-bottom: 1.5em;
+}
+
+.development-section h3 {
+  color: #000000;
+}
+
+.curriculum-pdf .download {
+  font-weight: bold;
+  color: #a51417;
+}
+
+.pdf-iframe {
+  width: 100%;
+  height: 500px;
+  border:
+}
+  </style>
+</head>
 <body>
   <ts-load data-name="header"></ts-load>
   <div id="page-content">
-    <main>
+    <main class="curriculum-overview">
       <h1>Curriculum Overview</h1>
-      <h2>
-        Contains: Educational Philosophy, Social/Emotional Development, 
-        Intellectual Development, Physical Development, and Visual Arts.
-      </h2>
+      <p class="subheading">
+        Contains: Educational Philosophy, Social/Emotional Development, Intellectual Development, Physical Development, and Visual Arts.
+      </p>
       
-      <h4 style="font-style: italic;">If looking for parent information 
-        (such as communications and discipline), head to the
-        <a href="files/parent_handbook.html">WUNS Parent Guide</a> page.
-      </h4>
-    <br>
-    <!--Temi: Some content from curriculum overview taken out so viewers can browse more quickly-> same format as Parent Handbook-->
-    <h2>Highlights</h2>
-    <ul>
-    <li><h3>Social/Emotional Development</h3></li>
-      <p>
-        The curriculum at Washington University Nursery School
-        emphasizes the individual strengths and capabilities of each child,
-        fostering self-esteem, communication, responsibility, problem-solving, 
-        and collaborative skills within the group setting.
-      </p>
-    <li><h3>Intellectual Development: Math Skills </h3></li>
-      <p>
-        At Washington University Nursery School,
-        math skills are honed through activities such as identifying shapes, 
-        counting, sorting, and measuring
-      </p>
-    <!--idk how to indent these bullets so just added them into the same line as their category header-->
-    <!-- <ul> 
-    <li>Language Development</li>
-    <li>Math Skills</li>
-    <li>Science Concepts</li>
-    <li>Social Studies Concepts</li>
-    </ul> -->
-    <li><h3>Physical Development: Gross Motor Skills, Fine Motor Skills</h3></li>
-      <p>
-        At Washington University Nursery School, gross motor skills are honed through 
-        activities like climbing, biking, and playing with balls and sand, fostering 
-        physical development. Simultaneously, fine motor skills are nurtured through 
-        writing, drawing, and engaging with manipulative activities like bead stringing
-        and collage creation, promoting dexterity and creativity in the children.
-      </p>
-    <li><h3>Visual Arts</h3></li>
-    <p>
-        Washington University Nursery School places a strong emphasis on fostering children's creativity through visual arts, 
-        music, and dramatic play, focusing on the process of exploration rather than the final outcome. The school 
-        provides a variety of materials and experiences, such as drawing, painting, printmaking, and 3-dimensional
-        constructions, to enhance children's attention span, fine motor skills, confidence, and independence. 
-        Additionally, teachers actively observe, assess, and adapt the curriculum to meet individual student
-        needs, ensuring a comprehensive and tailored learning experience.
-      </p>
-    <li><h3>Extra Help</h3></li>
-      <p>
-        If children require assistance, the curriculum at Washington University Nursery School
-        is flexibly adapted through personalized approaches, including increased teacher-student
-        interaction, expanded opportunities for exploration, simplified or expanded activities,
-        and diversified sensory engagement to cater to various learning styles and address 
-        specific needs.
-      </p>
-    <!--(Christine) confusing to have this in 2 places-->
-    <!-- <li><h3>Parent/Teacher Conferences</h3></li>
-    <p>Parent/teacher conferences occur twice a year 
-    (Fall and Spring) at Washington University Nursery School. 
-    The Fall conference is informal, providing an overview of students'
-    activities and progress, while the Spring conference is more formal, 
-    involving a comprehensive assessment sent in advance to facilitate 
-    parent understanding and preparation for discussing their child's development.</p>
-    </ul> -->
-    
-    <br>
-    <h2>See below or download the 
-    <a class="download" href="downloads/curriculum_overview.pdf" target="_blank">Curriculum Overview PDF.</a></h2>
-
-      <!--pdf viewer too small as of now-->
-      <!--(Temi) fixed!-->
-      <iframe
-        src="downloads/curriculum_overview.pdf#toolbar=0"
-        width="600 px"
-        height="700 px"
-        style="border:none"
-      ></iframe>
-        
-      <!-- <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-2-1.jpg" alt="" width="350" height="320"
-       >
-      <br>
-      <br>
-      <img src="https://nurseryschool.wustl.edu/files/2018/05/bear-cub-1.jpg" alt="" width="350" height="450"
-       > -->
+      <div class="parent-info">
+        <p>If looking for parent information (such as communications and discipline), head to the
+          <a href="files/parent_handbook.html">WUNS Parent Guide</a> page.
+        </p>
+      </div>
+      
+      <h2>Highlights</h2>
+      
+      <section class="development-section">
+        <h3>Intellectual Development: Math Skills</h3>
+        <p>
+          At Washington University Nursery School, math skills are honed through activities such as identifying shapes, 
+          counting, sorting, and measuring.
+        </p>
+      </section>
+      
+      <section class="development-section">
+        <h3>Social/Emotional Development</h3>
+        <p>
+          The curriculum at Washington University Nursery School emphasizes the individual strengths and capabilities of each child,
+          fostering self-esteem, communication, responsibility, problem-solving, and collaborative skills within the group setting.
+        </p>
+      </section>
+      
+      <section class="development-section">
+        <h3>Physical Development: Gross Motor Skills, Fine Motor Skills</h3>
+        <p>
+          Activities like climbing, biking, and playing with balls and sand foster physical development. Fine motor skills are nurtured through 
+          writing, drawing, and engaging with activities like bead stringing and collage creation, promoting dexterity and creativity.
+        </p>
+      </section>
+      
+      <section class="development-section">
+        <h3>Visual Arts</h3>
+        <p>
+          Fostering creativity through visual arts, music, and dramatic play focuses on exploration. A variety of materials and experiences
+          support children's development, with curriculum adjustments based on individual needs.
+        </p>
+      </section>
+      
+      <section class="development-section">
+        <h3>Extra Help</h3>
+        <p>
+          If children require assistance, the curriculum includes personalized approaches to cater to various learning styles and address 
+          specific needs.
+        </p>
+      </section>
+      
+      <section class="curriculum-pdf">
+        <h2>Curriculum Overview PDF</h2>
+        <p>See below or download the 
+          <a class="download" href="downloads/curriculum_overview.pdf" target="_blank">Curriculum Overview PDF.</a>
+        </p>
+        <iframe src="downloads/curriculum_overview.pdf#toolbar=0" class="pdf-iframe"></iframe>
+      </section>
     </main>
-    <!--(Christine) new side nav bar to reflect new info arch-->
-    <!--(Christine) moved this page to Classrooms & Programs so getting rid of side nav bar-->
-    <!-- <div class="widget-area stick secondary" role="complementary">
-      <ul class="subnav">
-          <li class="page_item page-item-27 page_item_has_children current_page_item">
-              <a href="files/about.html" aria-current="page">About</a>
-              <ul class="children">
-                  <li><hr></li>
-                  <li class="page_item page-item-34">
-                      <a href="files/hours_of_operation.html">Hours of Operation</a>
-                  </li>
-                  <li><hr></li>
-                  <li class="page_item page-item-65">
-                      <a href="files/contact_us.html">Visit Us</a>
-                  </li>
-                  <li><hr></li>
-                  <li class="page_item page-item-10513">
-                      <a href="files/curriculum_overview.html">Curriculum Overview</a>
-                  </li>
-                  <li><hr></li>
-                  <li class="page_item page-item-10513">
-                      <a href="files/calendar.html">Calendar</a>
-                  </li>
-                  <li><hr></li>
-                  <li class="page_item page-item-10513">
-                      <a href="files/staff.html">Staff</a>
-                  </li>
-                  <li><hr></li>
-              </ul>
-          </li>
-      </ul>
-    </div> -->
-  <!-- <div class="widget-area stick secondary" role="complementary">
-      <ul class="subnav">
-        <li class="page_item page-item-95 page_item_has_children current_page_item">
-          <a href="files/classrooms.html" aria-current="page">Classrooms</a>
-          <ul class="children">
-            <li><hr></li>
-            <li class="page_item page-item-10528">
-              <a href="files/curriculum_overview.html">Curriculum Overview</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-106">
-              <a href="files/teddy_bears.html">Teddy Bears</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-108">
-              <a href="files/panda_bears.html">Panda Bears</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-102">
-              <a href="files/bear_cubs.html">Bear Cubs</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-100">
-              <a href="files/big_bears.html">Big Bears</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-104">
-              <a href="files/sun_bears.html">Sun Bears</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-10512">
-              <a href="files/bear_cubs.html">Bear Tracks</a>
-            </li>
-            <li><hr></li>
-            <li class="page_item page-item-10514">
-              <a href="files/enrichment_programs.html">Enrichment Programs</a>
-            </li>
-            <li><hr></li>
-          </ul>
-        </li>
-      </ul> -->
-    </div>
   </div>
   <ts-load data-name="footer"></ts-load>
   <script src="scripts/js/app.js"></script>
 </body>
-
 </html>
